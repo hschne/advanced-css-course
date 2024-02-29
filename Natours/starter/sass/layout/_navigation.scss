@@ -15,6 +15,11 @@
     z-index: 2000;
     box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2);
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -31,6 +36,11 @@
     z-index: 1000;
 
     transition: transform 0.8s;
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
   }
 
   &__nav {
